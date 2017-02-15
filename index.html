@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Спецтех24</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
 	<header class="page-header">
@@ -26,9 +27,11 @@
 
 	<section class="promo">
 		<div class="container">
-			<p class="promo-slogan">ВМЕСТЕ МЫ СПРАВИМСЯ!</p>
-			<h1 class="promo-title">Спецтех24 - это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструментов для выполнения большинства видов работ.</h1>
-			<a href="#" class="promo-btn">Перейти в каталог</a>
+			<div class="promo-container">
+				<p class="promo-slogan">ВМЕСТЕ МЫ СПРАВИМСЯ!</p>
+				<h1 class="promo-title">Спецтех24 - это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструментов для выполнения большинства видов работ.</h1>
+				<a href="#" class="promo-btn">Перейти в каталог </a>
+			</div>
 		</div>
 	</section>
 
@@ -36,27 +39,29 @@
 		<div class="container">
 			<h2 class="order-title">Закажите бесплатную консультацию по подбору подходящей техники</h2>
 			<form action="" class="order-form">
-				<input type='text' name="Name" placeholder='Как вас зовут?'> 
-				<input type="tel" name="Telephone" placeholder='Номер для связи'>
-				<input type="date" name="Date" placeholder='Выберете дату'>
-				<input type="submit" placeholder='Заказать консультацию'>
+				<input class="order-form-item column3" type='text' name="Name" placeholder='Как вас зовут?'> 
+				<input class="order-form-item column3" type="tel" name="Telephone" placeholder='Номер для связи'>
+				<input class="order-form-item column3" type="date" name="Date" placeholder='Выберете дату'>
+				<input class="order-form-btn column3" type="submit" value='Заказать консультацию'>
 			</form>
 		</div>
 	</section>
 
 	<section class="advantages">
 		<div class="container">
-			<div class="advantages-item advantages-item-tools">
-				<p>Техника проходит обязательное обслуживание перед каждым выездом</p>
-			</div>
-			<div class="advantages-item advantages-item-worker">
-				<p>Все машины оборудованы спец. сигналами, для предупреждения аварий</p>
-			</div>
-			<div class="advantages-item advantages-item-border">
-				<p>Привезем модные строительные ограждения к каждому заказу от 20 000</p>
-			</div>
-			<div class="advantages-item advantages-item-operator">
-				<p>С техникой приедут квалифицированные операторы и водители</p>
+			<div class="raw">
+				<div class="advantages-item advantages-item-tools">
+					<p>Техника проходит обязательное обслуживание перед каждым выездом</p>
+				</div>
+				<div class="advantages-item advantages-item-worker">
+					<p>Все машины оборудованы спец. сигналами, для предупреждения аварий</p>
+				</div>
+				<div class="advantages-item advantages-item-border">
+					<p>Привезем модные строительные ограждения к каждому заказу от 20 000</p>
+				</div>
+				<div class="advantages-item advantages-item-operator">
+					<p>С техникой приедут квалифицированные операторы и водители</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -64,7 +69,7 @@
 	<section class="equipment">
 		<div class="container">
 			<nav class="equipment-nav">
-				<h2 class="title">Вся техника</h2>
+				<h2 class="equipment-title">Вся техника</h2>
 				<ul class="equipment-nav-list">
 					<li><a href="#">Гусеничные экскаваторы</a></li>
 					<li><a href="#">Колёсные экскаваторы</a></li>
@@ -77,33 +82,33 @@
 			</nav>
 
 			<div class="equipment-offers">
-			<h2 class="title">Спецпредложение</h2>
+				<h2 class="equipment-title">Спецпредложение</h2>
 				<table class="equipment-offers-table">
-					<tr>
+					<tr class="table_tr_1">
 						<th>Позиция для аренды</th>
 						<th>За смену</th>
 						<th>За неделю</th>
 						<th>За месяц</th>
 					</tr>
-					<tr>
+					<tr class="table_tr_2">
 						<td>Мини-экскаватор CAT</td>
 						<td>5 000</td>
 						<td>25 000</td>
 						<td>60 000</td>
 					</tr>
-					<tr>
+					<tr class="table_tr_3">
 						<td>Экскаватор VOLVO</td>
 						<td>3 000</td>
 						<td>15 000</td>
 						<td>40 000</td>
 					</tr>
-					<tr>
+					<tr class="table_tr_4">
 						<td>Грузовик VOLVO</td>
 						<td>5 000</td>
 						<td>25 000</td>
 						<td>60 000</td>
 					</tr>
-					<tr>
+					<tr class="table_tr_5">
 						<td>Мини-экскаватор CAT</td>
 						<td>3 000</td>
 						<td>15 000</td>
@@ -117,26 +122,26 @@
 	<section class="about">
 		<div class="container">
 			<div class="numbers">
-				<h2 class="about-title">Спецтех в цифрах</h2>
+				<h2 class="about-title"><b>Спецтех</b> в цифрах</h2>
 				<ul class="numbers-list">
-					<li><span class="numbers-number">16 </span>Лет работы</li>
-					<li><span class="numbers-number">715 </span>Объектов построено</li>
-					<li><span class="numbers-number">108 </span>Единиц техники</li>
-					<li><span class="numbers-number">500+ </span>Довольных клиентов</li>
+					<li><span class="numbers-number">16</span>Лет работы</li>
+					<li><span class="numbers-number">715</span>Объектов построено</li>
+					<li><span class="numbers-number">108</span>Единиц техники</li>
+					<li><span class="numbers-number">500+</span>Довольных клиентов</li>
 				</ul>
 			</div>
 
 			<div class="reviews">
-				<h2 class="about-title">Нас рекомендуют клиенты</h2>
+				<h2 class="about-title"><b>Нас рекомендуют клиенты</b></h2>
 				<div class="reviews-item">
-					<img src="" alt="" class="reviews-img">
+					<img src="http://placehold.it/114x114" alt="" class="reviews-img">
 					<blockquote class="reviews-review">
 						<p class="reviews-text">Спецтех24 - это надежные партнеры нашей компании, которые всегда выполняют работу быстро и еще у нихотличное чувство юмора! Благодарим и рекомендуем.</p>
 						<cite class="reviews-author">Оля Вольт, Реал-Строй</cite>
 					</blockquote>
 				</div>
 				<div class="reviews-item">
-					<img src="" alt="" class="reviews-img">
+					<img src="http://placehold.it/114x114" alt="" class="reviews-img">
 					<blockquote class="reviews-review">
 						<p class="reviews-text">Все виды работ, предусмотренные договором, компания выполнила на высоком уровне, качественно, в срок, в соответствии с требованиями ООО "ТНН" рекомендует</p>
 						<cite class="reviews-author">Григорий Безымянных, ТНН</cite>
@@ -146,25 +151,25 @@
 		</div>
 	</section>
 
-	<div class="map container">
-		<iframe src="https://api-maps.yandex.ru/frame/v1/-/CVgQ5YOF" width="560" height="400" frameborder="0"></iframe>
+	<div class="map">
+		<iframe src="https://api-maps.yandex.ru/frame/v1/-/CVgQ5YOF" width="100%" height="400" frameborder="0"></iframe>
 	</div>
 
 	<footer class="page-footer">
 		<div class="container">
-			<a href="/" class="logo">
-				<img src="http://placehold.it/50x50" alt="" class="logo-img">
-				<span class="logo-text"><b>Cпецтех</b>24</span>
+			<a href="#" class="logo-footer">
+				<img src="http://placehold.it/50x50" alt="" class="logo-img-footer">
+				<span class="logo-text-footer"><b>Cпецтех</b>24</span>
 			</a>
-			<nav class="main-nav">
+			<nav class="main-nav-footer">
 				<ul>
-					<li><a href="#">О компании</a></li>
-					<li><a href="#">Каталог</a></li>
-					<li><a href="#">Портфолио</a></li>
-					<li><a href="#">Контакты</a></li>
-					<li class="order-call"><a href="#">Заказать звонок</a></li>
+					<li><a href="index.html">О компании</a></li>
+					<li><a href="catalog.html">Каталог</a></li>
+					<li><a href="portfolio.html">Портфолио</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
 			</nav>
+			<button class="order-call-footer">Заказать звонок</button>
 		</div>
 	</footer>
 </body>
