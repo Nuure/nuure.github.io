@@ -94,7 +94,8 @@ input, select, button, textarea{
 .promo{
   padding-top: 141px;
   height: 488px;
-  background-image: url(../img/promo.jpg);
+  /*background-image: url(../img/promo.jpg);*/
+  background-image: url(https://pp.vk.me/c638127/v638127863/268e4/svMSURjp7WQ.jpg);
   /*background-image: url(https://pp.vk.me/c604430/v604430726/391a0/BOXEYLxdcsI.jpg);*/
   background-repeat: no-repeat;
   -webkit-background-size: cover;
