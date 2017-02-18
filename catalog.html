@@ -1,28 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Catalog</title>
-
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
   <header class="page-header">
     <div class="container">
       <a href="#" class="logo">
-        <img src="http://placehold.it/50x50" alt="" class="logo-img">
+       <!--  <img src="http://placehold.it/50x50" alt="" class="logo-img"> -->
         <span class="logo-text"><b>Cпецтех</b>24</span>
       </a>
-      <nav class="main-nav">
+      <nav class="portfolio-main-nav">
         <ul>
-          <li><a href="index.html">О компании</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="portfolio.html">Портфолио</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="index.html" class="portfolio_inactive">О компании</a></li>
+          <li><a href="catalog.html" class="portfolio_active">Каталог</a></li>
+          <li><a href="portfolio.html" class="portfolio_inactive">Портфолио</a></li>
+          <li><a href="contacts.html" class="portfolio_inactive">Контакты</a></li>
         </ul>
       </nav>
       <button class="order-call">Заказать звонок</button>
     </div>
   </header>
+
+<div class="grad_line"></div>
 
   <section class="catalog_header">
     <div class="container">
@@ -38,66 +42,71 @@
     </div>
   </section>
 
-  <section class="equipment">
+  <section class="catalog-equipment">
     <div class="container">
-      <nav class="equipment-nav">
-        <img src="http://placehold.it/50x50" alt="" class="logo-img">
-        <h2 class="title">Вся техника</h2>
-        <ul class="equipment-nav-list">
+      <nav class="catalog-equipment-nav">
+        <h2 class="catalog-equipment-title">Вся техника</h2>
+        <ul class="catalog-equipment-nav-list">
           <li><a href="#">Гусеничные экскаваторы</a></li>
-          <li><a href="#" class="active">Колёсные экскаваторы</a></li>
+          <li><a href="#" class="catalog-active">Колёсные экскаваторы</a></li>
           <li><a href="#">Мини-экскаваторы</a></li>
           <li><a href="#">Автокраны</a></li>
           <li><a href="#">Фронтальные погрузчики</a></li>
           <li><a href="#">Навесное оборудование</a></li>
           <li><a href="#">Дизельгенераторы</a></li>
         </ul>
+
+        <button class="catalog-equipment-nav-btn">Скачать каталог в PDF</button>
       </nav>
-      <button class="equipment-nav-btn">Скачать каталог в PDF</button>
+
 
       <div class="equipment_catalog">
-        <div class="equipment_catalog-example">
-          <h3 class="equipment_catalog-title">Колесный экскаватор <br>
-          Cat M315D</h3>
-          <img src="http://placehold.it/150x150" alt="" class="equipment_catalog-img">
-          <p class="equipment_catalog-price"><span class="equipment_catalog-price-bold">25 000</span> / месяц</p>
-          <button class="equipment_catalog-rent">Арендовать</button>
-          <button class="equipment_catalog-more_info">Подробнее</button>
-        </div>
+        <!-- <div class="equipment_catalog-examples"> -->
+          <div class="equipment_catalog-example">
+            <h3 class="equipment_catalog-example-title">Колесный экскаватор <br>
+              Cat M315D</h3>
+              <img src="img/Catalog-example.jpg" alt="" class="equipment_catalog-img">
+              <p class="equipment_catalog-price"><span class="equipment_catalog-price-bold">25 000</span> / месяц</p>
+              <button class="equipment_catalog-rent">Арендовать</button>
+              <button class="equipment_catalog-more_info">Подробнее</button>
+            </div>
 
-        <div class="equipment_catalog-example">
-          <h3 class="equipment_catalog-title">Колесный экскаватор <br>
-          Cat M315D</h3>
-          <img src="http://placehold.it/150x150" alt="" class="equipment_catalog-img">
-          <p class="equipment_catalog-price"><span class="equipment_catalog-price-bold">25 000</span> / месяц</p>
-          <button class="equipment_catalog-rent">Арендовать</button>
-          <button class="equipment_catalog-more_info">Подробнее</button>
-        </div>
+            <div class="equipment_catalog-example">
+              <h3 class="equipment_catalog-example-title">Колесный экскаватор <br>
+                Cat M315D</h3>
+                <img src="img/Catalog-example.jpg" alt="" class="equipment_catalog-img">
+                <p class="equipment_catalog-price"><span class="equipment_catalog-price-bold">25 000</span> / месяц</p>
+                <button class="equipment_catalog-rent">Арендовать</button>
+                <button class="equipment_catalog-more_info">Подробнее</button>
+              </div>
 
-        <div class="equipment_catalog-example">
-          <h3 class="equipment_catalog-title">Колесный экскаватор <br>
-          Cat M315D</h3>
-          <img src="http://placehold.it/150x150" alt="" class="equipment_catalog-img">
-          <p class="equipment_catalog-price"><span class="equipment_catalog-price-bold">25 000</span> / месяц</p>
-          <button class="equipment_catalog-rent">Арендовать</button>
-          <button class="equipment_catalog-more_info">Подробнее</button>
-        </div>
+              <div class="equipment_catalog-example">
+                <h3 class="equipment_catalog-example-title">Колесный экскаватор <br>
+                  Cat M315D</h3>
+                  <img src="img/Catalog-example.jpg" alt="" class="equipment_catalog-img">
+                  <p class="equipment_catalog-price"><span class="equipment_catalog-price-bold">25 000</span> / месяц</p>
+                  <button class="equipment_catalog-rent">Арендовать</button>
+                  <button class="equipment_catalog-more_info">Подробнее</button>
+                </div>
 
-        <div class="equipment_catalog-example">
-          <h3 class="equipment_catalog-title">Колесный экскаватор <br>
-          Cat M315D</h3>
-          <img src="http://placehold.it/150x150" alt="" class="equipment_catalog-img">
-          <p class="equipment_catalog-price"><span class="equipment_catalog-price-bold">25 000</span> / месяц</p>
-          <button class="equipment_catalog-rent">Арендовать</button>
-          <button class="equipment_catalog-more_info">Подробнее</button>
-        </div>
+                <div class="equipment_catalog-example">
+                <span class="new">new</span>
+                  <h3 class="equipment_catalog-example-title">Колесный экскаватор <br>
+                    Cat M315D</h3>
+                    <img src="img/Catalog-example.jpg" alt="" class="equipment_catalog-img">
+                    <p class="equipment_catalog-price"><span class="equipment_catalog-price-bold">25 000</span> / месяц</p>
+                    <button class="equipment_catalog-rent">Арендовать</button>
+                    <button class="equipment_catalog-more_info">Подробнее</button>
+                  </div>
+                  
+                  <!-- </div> -->
 
         <div class="equipment_catalog-page_number">
           <ul>
-            <li><a href="" class="equipment_catalog-page active-page">1</a></li>
-            <li><a href="" class="equipment_catalog-page">2</a></li>
-            <li><a href="" class="equipment_catalog-page">3</a></li>
-            <li><a href="" class="equipment_catalog-page">4</a></li>
+            <li><a href="" class="equipment_catalog-page-active-page">1</a></li>
+            <li><a href="" class="equipment_catalog-page-inactive-page">2</a></li>
+            <li><a href="" class="equipment_catalog-page-inactive-page">3</a></li>
+            <li><a href="" class="equipment_catalog-page-inactive-page">4</a></li>
           </ul>
         </div>
 
@@ -108,45 +117,52 @@
   <section class="deals">
     <div class="container">
       <h2 class="deals-header">Спецпредложения</h2>
-      <div class="deals-deal">
-        <h3 class="equipment_catalog-title"></h3>
-        <img src="" alt="" class="equipment_catalog-img">
-        <p class="equipment_catalog-price"><span class="equipment_catalog-price-del">25 000 </span><span class="equipment_catalog-price-bold">25 000</span> / месяц</p>
-        <button class="equipment_catalog-rent">Арендовать</button>
-        <button class="equipment_catalog-more_info">Подробнее</button>
-      </div>
-      <div class="deals-deal">
-        <h3 class="equipment_catalog-title"></h3>
-        <img src="" alt="" class="equipment_catalog-img">
-        <p class="equipment_catalog-price"><span class="equipment_catalog-price-del">25 000 </span><span class="equipment_catalog-price-bold">25 000</span> / месяц</p>
-        <button class="equipment_catalog-rent">Арендовать</button>
-        <button class="equipment_catalog-more_info">Подробнее</button>
-      </div>
-      <div class="deals-deal">
-        <h3 class="equipment_catalog-title"></h3>
-        <img src="" alt="" class="equipment_catalog-img">
-        <p class="equipment_catalog-price"><span class="equipment_catalog-price-del">25 000 </span><span class="equipment_catalog-price-bold">25 000</span> / месяц</p>
-        <button class="equipment_catalog-rent">Арендовать</button>
-        <button class="equipment_catalog-more_info">Подробнее</button>
-      </div>
-    </div>
-  </section>
 
-    <footer class="page-footer">
+      <div class="deals-deal">
+      <span class="sale">sale</span>
+        <h3 class="equipment_catalog-example-title">Колесный экскаватор <br>
+          Cat M315D</h3>
+          <img src="img/Catalog-example.jpg" alt="" class="equipment_catalog-img">
+          <p class="equipment_catalog-price"><span class="equipment_catalog-price-del">25 000 </span><span class="equipment_catalog-price-bold">25 000</span> / месяц</p>
+          <button class="equipment_catalog-rent">Арендовать</button>
+          <button class="equipment_catalog-more_info">Подробнее</button>
+        </div>
+
+        <div class="deals-deal">
+          <h3 class="equipment_catalog-example-title">Колесный экскаватор <br>
+            Cat M315D</h3>
+            <img src="img/Catalog-example.jpg" alt="" class="equipment_catalog-img">
+            <p class="equipment_catalog-price"><span class="equipment_catalog-price-del">25 000 </span><span class="equipment_catalog-price-bold">25 000</span> / месяц</p>
+            <button class="equipment_catalog-rent">Арендовать</button>
+            <button class="equipment_catalog-more_info">Подробнее</button>
+          </div>
+
+          <div class="deals-deal">
+            <h3 class="equipment_catalog-example-title">Колесный экскаватор<br>
+              Cat M315D</h3>
+              <img src="img/Catalog-example.jpg" alt="" class="equipment_catalog-img">
+              <p class="equipment_catalog-price"><span class="equipment_catalog-price-del">25 000 </span><span class="equipment_catalog-price-bold">25 000</span> / месяц</p>
+              <button class="equipment_catalog-rent">Арендовать</button>
+              <button class="equipment_catalog-more_info">Подробнее</button>
+            </div>
+          </div>
+        </section>
+
+  <footer class="page-footer">
     <div class="container">
-      <a href="/" class="logo">
-        <img src="http://placehold.it/50x50" alt="" class="logo-img">
-        <span class="logo-text"><b>Cпецтех</b>24</span>
+      <a href="#" class="logo-footer">
+        <!-- <img src="http://placehold.it/50x50" alt="" class="logo-img-footer"> -->
+        <span class="logo-text-footer"><b>Cпецтех</b>24</span>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav-footer">
         <ul>
-          <li><a href="#">О компании</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Портфолио</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li class="order-call"><a href="#">Заказать звонок</a></li>
+          <li><a href="index.html">О компании</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="portfolio.html">Портфолио</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
+      <button class="order-call-footer">Заказать звонок</button>
     </div>
   </footer>
 </body>

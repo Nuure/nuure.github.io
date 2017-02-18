@@ -1,43 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Portfolio</title>
-
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
     <header class="page-header">
     <div class="container">
       <a href="index.html" class="logo">
-        <img src="http://placehold.it/50x50" alt="" class="logo-img">
+      <!--   <img src="http://placehold.it/50x50" alt="" class="logo-img"> -->
         <span class="logo-text"><b>Cпецтех</b>24</span>
       </a>
-      <nav class="main-nav">
+      <nav class="portfolio-main-nav">
         <ul>
-          <li><a href="index.html">О компании</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="portfolio.html">Портфолио</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="index.html" class="portfolio_inactive">О компании</a></li>
+          <li><a href="catalog.html" class="portfolio_inactive">Каталог</a></li>
+          <li><a href="portfolio.html" class="portfolio_active">Портфолио</a></li>
+          <li><a href="contacts.html" class="portfolio_inactive">Контакты</a></li>
         </ul>
       </nav>
       <button class="order-call">Заказать звонок</button>
     </div>
   </header>
 
+<div class="grad_line"></div>
+
   <section class="second_nav">
    <div class="container">
     <h1 class="second_nav-title">Портфолио</h1>
     <nav class="second_nav-menu">
       <ul>
-        <li><a href="#">Все работы</a></li>
-        <li><a href="#">Строительство</a></li>
-        <li><a href="#">Демонтаж</a></li>
-        <li><a href="#">Земляные работы</a></li>
+        <li><a class="second_nav-menu-space" href="#">Все работы</a></li>
+        <li><a class="second_nav-menu-space" href="#">Строительство</a></li>
+        <li><a class="second_nav-menu-space" href="#">Демонтаж</a></li>
+        <li><a class="second_nav-menu-space" href="#">Земляные работы</a></li>
         <li><a href="#">Перевозка</a></li>
       </ul>
     </nav>
   </div>
 </section>
+
+<div class="black_line"></div>
 
 <section class="example example_1">
   <div class="container">
@@ -49,6 +55,8 @@
   </div>
 </section>
 
+<div class="black_line"></div>
+
 <section class="example example_2">
   <div class="container">
     <div class="example-desciption">
@@ -58,6 +66,8 @@
     </div>
   </div>
 </section>
+
+<div class="black_line"></div>
 
 <section class="example example_3">
   <div class="container">
@@ -69,14 +79,16 @@
   </div>
 </section>
 
+<div class="grad_line"></div>
+
   <section class="order">
     <div class="container">
       <h2 class="order-title">Закажите бесплатную консультацию по подбору подходящей техники</h2>
       <form action="" class="order-form">
-        <input type='text' name="Name" placeholder='Как вас зовут?'> 
-        <input type="tel" name="Telephone" placeholder='Номер для связи'>
-        <input type="date" name="Date" placeholder='Выберете дату'>
-        <input type="submit" placeholder='Заказать консультацию'>
+        <input class="order-form-item column3" type='text' name="Name" placeholder='Как вас зовут?'> 
+        <input class="order-form-item column3" type="tel" name="Telephone" placeholder='Номер для связи'>
+        <input class="order-form-item column3" type="date" name="Date" value='Выберете дату'>
+        <input class="order-form-btn column3" type="submit" value='Заказать консультацию'>
       </form>
     </div>
   </section>
@@ -100,19 +112,19 @@
 
   <footer class="page-footer">
     <div class="container">
-      <a href="/" class="logo">
-        <img src="http://placehold.it/50x50" alt="" class="logo-img">
-        <span class="logo-text"><b>Cпецтех</b>24</span>
+      <a href="#" class="logo-footer">
+      <!--   <img src="http://placehold.it/50x50" alt="" class="logo-img-footer"> -->
+        <span class="logo-text-footer"><b>Cпецтех</b>24</span>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav-footer">
         <ul>
-          <li><a href="#">О компании</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Портфолио</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li class="order-call"><a href="#">Заказать звонок</a></li>
+          <li><a href="index.html">О компании</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="portfolio.html">Портфолио</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
+      <button class="order-call-footer">Заказать звонок</button>
     </div>
   </footer>
 </body>

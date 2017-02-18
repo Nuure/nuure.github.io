@@ -1,18 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Contacts</title>
-
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
-  <header class="page-header">
+    <header class="page-header">
     <div class="container">
-      <a href="#" class="logo">
-        <img src="http://placehold.it/50x50" alt="" class="logo-img">
+      <a href="index.html" class="logo">
+       <!--  <img src="http://placehold.it/50x50" alt="" class="logo-img"> -->
         <span class="logo-text"><b>Cпецтех</b>24</span>
       </a>
-      <nav class="main-nav">
+      <nav class="portfolio-main-nav">
+        <ul>
+          <li><a href="index.html" class="portfolio_inactive">О компании</a></li>
+          <li><a href="catalog.html" class="portfolio_inactive">Каталог</a></li>
+          <li><a href="portfolio.html" class="portfolio_inactive">Портфолио</a></li>
+          <li><a href="contacts.html" class="portfolio_active">Контакты</a></li>
+        </ul>
+      </nav>
+      <button class="order-call">Заказать звонок</button>
+    </div>
+  </header>
+
+<div class="grad_line"></div>
+
+  <section class="contacts_header">
+    <div class="container">
+      <h1 class="contacts_header-title">Контакты</h1>
+      <span class="contacts_header-text">Свяжитесь с нами, и все будет хорошо</span>
+      <button class="contacts_header-consult-btn">Мне нужна консультация</button>
+    </div>
+  </section>
+
+  <section class="contacts">
+    <div class="container">
+      <div class="contacts-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.2630054415354!2d37.61860631571623!3d55.75393329937259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506b52311f!2z0JrRgNCw0YHQvdCw0Y8g0J_Qu9C-0YnQsNC00Yw!5e0!3m2!1sru!2sru!4v1487382572569" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="contacts-feedback">
+        <p class="contacts-telephone">+7 (812) 212 85 06</p>
+        <p class="contacts-mail">rent@spezteh.ru</p>
+        <p class="contacts-text">Заказать консультацию по подбору подходящей техники</p>
+        <form action="" class="contacts-order_form">
+          <input class="contacts-order_form-item" type='text' name="Name" placeholder='Имя'> 
+          <input class="contacts-order_form-item" type="tel" name="Telephone" placeholder='Номер для связи'>
+          <input class="contacts-order_form-item-tasks" type="text" name="Description" placeholder='Описание задачи (можно примерное)'>
+    
+        <input class="contacts-order_form-btn" type="submit" value='Получить консультацию'>
+        </form>
+      </div>
+    </div>
+  </section>
+
+<section class="contacts-reviews">
+  <div class="container">
+  <h2 class="contacts-reviews-title">Отзывы</h2>
+    <div class="contacts-reviews-review">
+      <img src="img/Contacts-review-1.jpg" alt="" class="contacts-reviews-img">
+      <p class="contacts-reviews-text">Спецтех24 - это надежные партнеры нашей компании, которые всегда выполнют работу быстро и еще у них отличное чувство юмора! Благодарим и рекомендуем.</p>
+      <cite class="contacts-reviews-author">Оля Молния</cite>
+    </div>
+    <div class="contacts-reviews-review">
+      <img src="img/Contacts-review-2.jpg" alt="" class="contacts-reviews-img">
+      <p class="contacts-reviews-text">Спецтех24 - это надежные партнеры нашей компании, которые всегда выполнют работу быстро и еще у них отличное чувство юмора! Благодарим и рекомендуем.</p>
+      <cite class="contacts-reviews-author">Оля Молния</cite>
+    </div>
+    <div class="contacts-reviews-review">
+      <img src="img/Contacts-review-3.jpg" alt="" class="contacts-reviews-img">
+      <p class="contacts-reviews-text">Спецтех24 - это надежные партнеры нашей компании, которые всегда выполнют работу быстро и еще у них отличное чувство юмора! Благодарим и рекомендуем.</p>
+      <cite class="contacts-reviews-author">Оля Молния</cite>
+    </div>
+    <div class="contacts-reviews-review">
+      <img src="img/Contacts-review-4.jpg" alt="" class="contacts-reviews-img">
+      <p class="contacts-reviews-text">Спецтех24 - это надежные партнеры нашей компании, которые всегда выполнют работу быстро и еще у них отличное чувство юмора! Благодарим и рекомендуем.</p>
+      <cite class="contacts-reviews-author">Оля Молния</cite>
+    </div>
+  </div>
+</section>
+
+  <footer class="page-footer">
+    <div class="container">
+      <a href="#" class="logo-footer">
+       <!--  <img src="http://placehold.it/50x50" alt="" class="logo-img-footer"> -->
+        <span class="logo-text-footer"><b>Cпецтех</b>24</span>
+      </a>
+      <nav class="main-nav-footer">
         <ul>
           <li><a href="index.html">О компании</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -20,77 +95,7 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
-      <button class="order-call">Заказать звонок</button>
-    </div>
-  </header>
-
-  <section class="contacts_header">
-    <div class="container">
-      <h1 class="contacts_header-title">Контакты</h1>
-      <span class="contacts_header-text">Свяжитесь с нами, и все будет хорошо</span>
-      <button class="contacts_header-consult">Мне нужна консультация</button>
-    </div>
-  </section>
-
-  <section class="contacts">
-    <div class="container">
-      <div class="contacts-map"><iframe src="https://api-maps.yandex.ru/frame/v1/-/CVgQ5YOF" width="560" height="400" frameborder="0"></iframe>
-      </div>
-      <div class="contacts-feedback">
-        <p class="contacts-telephone">+7 (812) 212 85 06</p>
-        <p class="contacts-mail">rent@spezteh.ru</p>
-        <p class="contacts-text">Заказать консультацию по подбору подходящей теххники</p>
-        <form action="" class="contacts-order_form">
-          <input type='text' name="Name" placeholder='Имя'> 
-          <input type="tel" name="Telephone" placeholder='Номер для связи'>
-          <input type="text" name="Description" placeholder='Описание задачи (можно примерное)'>
-          <input type="submit" placeholder='Получить консультацию'>
-        </form>
-      </div>
-    </div>
-  </section>
-
-<section class="reviews">
-  <div class="container">
-  <h2 class="reviews-title">Отзывы</h2>
-    <div class="reviews-review">
-      <img src="http://placehold.it/100x100" alt="" class="reviews-img">
-      <p class="reviews-text">Спецтех24 - это надежные партнеры нашей компании, которые всегда выполнют работу быстро и еще у них отличное чувство юмора! Благодарим и рекомендуем.</p>
-      <cite class="reviews-author">Оля Молния</cite>
-    </div>
-    <div class="reviews-review">
-      <img src="http://placehold.it/100x100" alt="" class="reviews-img">
-      <p class="reviews-text">Спецтех24 - это надежные партнеры нашей компании, которые всегда выполнют работу быстро и еще у них отличное чувство юмора! Благодарим и рекомендуем.</p>
-      <cite class="reviews-author">Оля Молния</cite>
-    </div>
-    <div class="reviews-review">
-      <img src="http://placehold.it/100x100" alt="" class="reviews-img">
-      <p class="reviews-text">Спецтех24 - это надежные партнеры нашей компании, которые всегда выполнют работу быстро и еще у них отличное чувство юмора! Благодарим и рекомендуем.</p>
-      <cite class="reviews-author">Оля Молния</cite>
-    </div>
-    <div class="reviews-review">
-      <img src="http://placehold.it/100x100" alt="" class="reviews-img">
-      <p class="reviews-text">Спецтех24 - это надежные партнеры нашей компании, которые всегда выполнют работу быстро и еще у них отличное чувство юмора! Благодарим и рекомендуем.</p>
-      <cite class="reviews-author">Оля Молния</cite>
-    </div>
-  </div>
-</section>
-
-  <footer class="page-footer">
-    <div class="container">
-      <a href="/" class="logo">
-        <img src="http://placehold.it/50x50" alt="" class="logo-img">
-        <span class="logo-text"><b>Cпецтех</b>24</span>
-      </a>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#">О компании</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Портфолио</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li class="order-call"><a href="#">Заказать звонок</a></li>
-        </ul>
-      </nav>
+      <button class="order-call-footer">Заказать звонок</button>
     </div>
   </footer>
 </body>
